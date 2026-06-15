@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/services/llm/test/test-openai-provider.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "init": "^0.1.2",
+    "openai": "^6.42.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
