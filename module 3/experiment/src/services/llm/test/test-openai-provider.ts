@@ -1,9 +1,11 @@
 import { calculateCost } from "../cost.js";
+import { LLMClient } from "../llm.client.js";
 import { OpenAIProvider } from "../providers/openai.provider.js";
 
 const provider = new OpenAIProvider();
+const llmClient = new LLMClient(provider);
 
-const result = await provider.generateText({
+const result = await llmClient.generateText({
   model: "gpt-5",
   system: "You are a helpful assistant",
   messages: [
